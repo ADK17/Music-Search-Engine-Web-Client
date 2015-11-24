@@ -1,0 +1,35 @@
+<html>
+    
+    <head>
+     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    
+    </head>
+    <body ng-app="SearchEngine" ng-controller="mainController" style="background-color:#eee">
+    <div id="logo">
+        <h1>Music Search Engine</h1>
+        <h4 style="padding-left:110px">Find your tune</h4>
+        </div>
+        <div id="search-pane">
+            <form class="css-form">
+				<input  class="form-control" placeholder="Enter Track..."  ng-model="searchString" data-toggle="tooltip" data-placement="right" title="Enter name of the song" tooltip>
+				<button id="search-btn" class="btn btn-medium btn-primary roll-form-btn" ng-click="search()"data-toggle="tooltip" data-placement="right" title="Log in with the above credentials." type="submit" tooltip>Search</button>
+			</form>
+        </div>
+        <div id="search-results">   
+<!--            <div ng-repeat="url in results.urls"><a href={{url}}>{{url}}</div>    -->
+        <div class="list-group" style="width:auto">
+            <a ng-repeat="url in results.urls" href="{{url}}" class="list-group-item">{{url}}</a>
+        </div>
+        </div>
+    
+    <script src="controllers/mainController.js"></script>
+    </body>
+    
+    
+</html>

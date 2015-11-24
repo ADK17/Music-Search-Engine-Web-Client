@@ -1,0 +1,40 @@
+#search-pane {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top:500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#search-btn {
+    margin-top:10px;
+    width:200px;
+    left:30%;
+    display:inline-block;
+    position:absolute;
+}
+
+#logo {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top:200px;
+    bottom: 0;
+    left: 8%;
+    right: 0;
+    margin: auto;
+}
+
+#search-results {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top:700px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
